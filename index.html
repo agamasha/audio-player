@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "shortcut icon" href = "./img/music-svgrepo-com.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <script defer src = "index.js"></script>
+    <title>Audio Player</title>
+</head>
+<body>
+    <audio src = "./audio/Lund-Broken.mp3" class = "song0" autoplay = "false"></audio>
+    <audio src = "./audio/Sleeping-At-Last-Neptune.mp3" class = "song1" autoplay = "false"></audio>
+    <audio src = "./audio/Twenty-One-Pilots-Car-Radio.mp3" class = "song2" autoplay = "false"></audio>
+    <div class = "player-wrapper">
+        <div class = "player">
+            <div class = "pic"></div>
+            <div class = "song-info">
+                <div class = "song-name"></div>
+                <div class = "singer"></div>
+            </div>
+            <div class = "song-progress">
+                <input type = "range" min = "0" max = "100" step = "1" onchange = "progressFunction()">
+                <div class = "duration-info">
+                    <div class = "current-time"></div>
+                    <div class = "slash">/</div>
+                    <div class = "duration"></div>
+                </div>
+            </div>
+            <div class = "control-buttons">
+                <div class = "prev"></div>
+                <button class = "play-stop-button"><div class = "play"></div></button>
+                <div class = "next"></div>
+            </div>
+        </div>
+        <footer>
+            <div class = "footer">
+                <div class = "year">2023</div>
+                <a class = "rss" href = " https://rs.school/js-stage0"><img src = "./img/rs_school_js.svg"></a>
+                <a class = "username" href = "https://github.com/agamasha">Agalakova Maria</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
